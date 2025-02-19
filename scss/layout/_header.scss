@@ -1,0 +1,6 @@
+@use "../abstract/" as *;
+
+.header {
+  width: $webSize;
+  margin-inline: auto;
+}

@@ -58,6 +58,11 @@ a {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.header {
+  width: 160rem;
+  margin-inline: auto;
+}
+
 .logo svg {
   width: 15rem;
   height: auto;
@@ -70,6 +75,24 @@ a {
 .familysite a {
   font-size: 4rem;
   font-weight: 800;
+}
+.familysite li {
+  transition: 0.3s;
+}
+.familysite li:nth-child(1):hover {
+  color: orange;
+}
+.familysite li:nth-child(2):hover {
+  color: tomato;
+}
+.familysite li:nth-child(3):hover {
+  color: violet;
+}
+.familysite li:nth-child(4):hover {
+  color: skyblue;
+}
+.familysite li:nth-child(5):hover {
+  color: silver;
 }
 
 /*# sourceMappingURL=index.css.map */
