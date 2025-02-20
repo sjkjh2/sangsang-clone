@@ -1,4 +1,4 @@
-@use "./ir" as *;
+@use "../abstract/" as *;
 
 .a11y-hidden {
   @include a11y-hidden;

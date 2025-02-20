@@ -2,17 +2,12 @@
 
 .familysite {
   $colors : orange, tomato, violet, skyblue, silver;
-transition: all 0.3s;
+
   display: flex;
   gap: 2rem;
-  a {
-    font-size: 4rem;
-    font-weight: 800;
-  }
-
+  
   li {
-    
-    border: 1px solid red;
+    transition: color 0.3s;
     @each $color in $colors {
       $index: list.index($colors, $color);
       // @debug $index;
@@ -20,5 +15,10 @@ transition: all 0.3s;
         color: $color;
       }
     }
+  }
+
+  a {
+    font-size: 4rem;
+    font-weight: 800;
   }
 }
