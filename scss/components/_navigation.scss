@@ -2,7 +2,7 @@
 
 .familysite {
   $colors : orange, tomato, violet, skyblue, silver;
-
+transition: all 0.3s;
   display: flex;
   gap: 2rem;
   a {
@@ -11,10 +11,11 @@
   }
 
   li {
-    transition: 0.3s;
+    
+    border: 1px solid red;
     @each $color in $colors {
       $index: list.index($colors, $color);
-      @debug $index;
+      // @debug $index;
       &:nth-child(#{$index}):hover {
         color: $color;
       }
