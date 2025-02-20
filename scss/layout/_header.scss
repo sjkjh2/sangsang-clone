@@ -1,6 +1,9 @@
 @use "../abstract/" as *;
 
 .header {
-  width: $webSize;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: 1fr 1fr;
+  width: $webWidth;
   margin: 10rem auto auto;
 }

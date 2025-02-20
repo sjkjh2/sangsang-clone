@@ -43,3 +43,33 @@
     color: #fff;
   }
 }
+
+.btn-search {
+  width: 4rem;
+  aspect-ratio: 1;
+  @include background("ico_search.svg", center, null, size, contain);
+
+  .header & {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    align-self: center;
+  }
+
+  .search & {
+    translate: 0 -0.4rem;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+.btn-close {
+  width: 3rem;
+  aspect-ratio: 1;
+  @include background("ico_close.svg", center, null, size, contain);
+
+  .search & {
+    position: absolute;
+    right: 0;
+    top: -2rem;
+  }
+}
