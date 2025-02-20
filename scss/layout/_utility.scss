@@ -1,0 +1,15 @@
+@use "../abstract/" as *;
+
+.utility {
+  position: absolute;
+  inset: 0 0 auto;
+  background-color: #000;
+  padding-block: 2rem;
+  > div {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    width: $webSize;
+    margin-inline: auto;
+  }
+}

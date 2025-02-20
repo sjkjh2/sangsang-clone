@@ -11,6 +11,14 @@
     width: 2rem;
     aspect-ratio: 1;
     @include background("ico_archive.svg", center, null, size, contain);
+
+    .utility & {
+      @include background("ico_archive_white.svg", center, null, size, contain);
+    }
+  }
+
+  .utility & {
+    color: #fff;
   }
 }
 
@@ -24,6 +32,14 @@
     content: "";
     width: 2rem;
     aspect-ratio: 1;
-    @include background("ico_archive.svg", center, null, size, contain);
+    @include background("ico_calendar.svg", center, null, size, contain);
+
+    .utility & {
+      @include background("ico_calendar_white.svg", center, null, size, contain);
+    }
+  }
+
+  .utility & {
+    color: #fff;
   }
 }
