@@ -1,9 +1,13 @@
 @use "../abstract/" as *;
 
 .header {
-  display: grid;
-  grid-template-columns: 1fr min-content;
-  grid-template-rows: 1fr 1fr;
-  width: $webWidth;
-  margin: 10rem auto auto;
+  position: relative;
+  &-wrap {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: 1fr 1fr;
+    width: $webWidth;
+    margin-inline: auto;
+    padding-top: 10rem;
+  }
 }
